@@ -31,7 +31,7 @@ export const Content = styled.div `
         align-items: center;
         p {
             margin-left: 1rem;
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             color: #3DDAB4;
             font-family: 'Montserrat', sans-serif;
         }

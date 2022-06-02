@@ -9,7 +9,7 @@ createServer({
     this.get("transactions", () => {
       return [
         {
-          id: 1.,
+          id: 1,
           title: "Primeira Transação",
           amount: 400,
           type: "deposit",
