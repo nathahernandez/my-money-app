@@ -11,7 +11,7 @@ export const Container = styled.div `
         padding: 1.5rem 2rem;
         border-radius: 0.25rem;
         color: var(--text-light);
-        transition: background 0.3s, color 0.3s;
+        transition: background 0.3s, color 0.3s, display 0.3s;
 
         header {
         display: flex;
