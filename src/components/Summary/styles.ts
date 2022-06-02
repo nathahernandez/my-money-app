@@ -10,16 +10,53 @@ export const Container = styled.div `
         background: var(--shape);
         padding: 1.5rem 2rem;
         border-radius: 0.25rem;
-        color: var(--text-title);
+        color: var(--text-light);
+        transition: background 0.3s, color 0.3s;
 
         header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         }
+        
+        .outBlack{
+            display: none;
+        }
+        .inBlack{
+            display: none;
+        }
+
         &.last{
             background: var(--green);
-            color: #fff;
+            color: var(--body);
+        }
+        &.out:hover{
+            background: var(--red);
+            
+            .outBlack{
+                display: inline;
+            }
+            .outWhite{
+                display: none;
+            }
+            
+            p, strong{
+                color: var(--body);
+            }
+        }
+        &.in:hover{
+            background: var(--green);
+        
+            .inBlack{
+                display: inline;
+            }
+            .inWhite{
+                display: none;
+            }
+        
+            p, strong{
+                color: var(--body);
+            }
         }
 
     }

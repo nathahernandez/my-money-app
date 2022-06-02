@@ -14,15 +14,16 @@ export const Content = styled.div `
 
     button{
         font-size: 1rem;
-        color: #FFF;
-        background: var(--blue-button);
+        color: #F2F2F2;
+        background: var(--shape);
         border: 0;
         padding: 0 2rem;
         border-radius: 0.25rem;
         height: 3rem;
-        transition: filter 0.2s;
+        transition: background 0.2s, color 0.2s;
         &:hover{
-            filter: brightness(0.7);
+            background: var(--green);
+            color: var(--body);
         }
     }
     .Logo {
@@ -31,8 +32,8 @@ export const Content = styled.div `
         p {
             margin-left: 1rem;
             font-size: 1.5rem;
-            color: var(--shape);
-            font-weight: bold;
+            color: #3DDAB4;
+            font-family: 'Montserrat', sans-serif;
         }
     }
 `;
